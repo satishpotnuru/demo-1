@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(135deg, #2196f3 0%, #00c6ff 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(33,150,243,0.12);
+    padding: 32px 24px 24px 24px;
+}
+h1 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 24px;
+    text-shadow: 1px 2px 8px #90caf9;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+input, textarea {
+    border: 1.5px solid #90caf9;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    background: #e3f2fd;
+    color: #1565c0;
+}
+input:focus, textarea:focus {
+    border-color: #1976d2;
+    background: #bbdefb;
+}
+button {
+    background: linear-gradient(90deg, #1976d2 0%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #90caf9;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+button:hover {
+    background: linear-gradient(90deg, #00c6ff 0%, #1976d2 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px #1976d2;
+}
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card {
+    background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.18);
+    padding: 16px;
+    color: #1565c0;
+    position: relative;
+    border-left: 6px solid #1976d2;
+}
+.card .name {
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 6px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(33,150,243,0.18);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background: #e3f2fd;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 4px 24px #90caf9;
+    position: relative;
+}
+#closePopup {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 1.5rem;
+    color: #1976d2;
+    cursor: pointer;
+}

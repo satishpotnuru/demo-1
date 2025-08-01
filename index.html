@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Appreciation Wall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Appreciation Wall</h1>
+        <form id="appreciationForm">
+            <input type="text" id="name" placeholder="Your Name (optional)">
+            <textarea id="message" placeholder="Your Appreciation Message (min 10 chars)" required></textarea>
+            <button type="submit">Post Message</button>
+        </form>
+        <div id="messages"></div>
+    </div>
+    <div id="thankYouPopup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your message has been posted.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Example config for Team Appreciation Wall
+app:
+  name: Team Appreciation Wall
+  version: 1.0
+  theme: cheerful
+  message_min_length: 10
